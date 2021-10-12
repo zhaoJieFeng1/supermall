@@ -10,11 +10,23 @@
 
 <script>
   import NavBar from "../../components/common/navbar/NavBar";
+  import {getHomeMultidatea} from "../../network/home";
 
   export default {
     name: "Home",
     components: {
       NavBar
+    },
+    data() {
+      return {
+
+      }
+    },
+    created() {
+      //1.  请求多个数据
+      getHomeMultidatea().then(res => {
+        console.log(res);
+      })
     }
   }
 </script>
