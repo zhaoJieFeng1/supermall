@@ -10,9 +10,9 @@
 </template>
 
 <script>
-  import NavBar from "../../components/common/navbar/NavBar";
+  import NavBar from "components/common/navbar/NavBar";
   import HomeSwiper from "./childComps/HomeSwiper";
-  import {getHomeMultidatea} from "../../network/home";
+  import {getHomeMultidatea} from "network/home";
 
   export default {
     name: "Home",
